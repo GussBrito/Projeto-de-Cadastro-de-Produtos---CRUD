@@ -1,10 +1,9 @@
 import java.io.Serializable;
-import java.lang.annotation.Documented;
 import java.util.Objects;
-
 public class Produto implements Serializable {
-    // Indentificador único para a versão da classe durante a serialização.
-    private static final long seralVersionUID = 1L;
+
+    // Identificador único para a versão da classe durante a serialização
+    private static final long serialVersionUID = 1L;
 
     private int codigo;
     private String descricao;
@@ -13,8 +12,9 @@ public class Produto implements Serializable {
     public Produto(int codigo, String descricao, double preco){
         this.codigo = codigo;
         this.descricao = descricao;
-        this.codigo = codigo;
+        this.preco = preco;
     }
+
     //Getters e Setters
 
 
@@ -22,8 +22,8 @@ public class Produto implements Serializable {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setCodigo(int codiogo) {
+        this.codigo = codiogo;
     }
 
     public String getDescricao() {
@@ -42,7 +42,7 @@ public class Produto implements Serializable {
         this.preco = preco;
     }
 
-    // Sobrescrever equals() e hashCode() para tratar um produto como único pelo código.
+    // Sobrescrevendo equals() e hashCode() para tratar um porduto como único pelo seu código.
     @Override
     public boolean equals(Object o){
         if (this == o) return true;
@@ -59,7 +59,8 @@ public class Produto implements Serializable {
         return "Produto{" +
                 "codigo=" + codigo +
                 ", descricao+'" + descricao + '\'' +
-                ", preco=" +preco+
+                ", preco=" +preco +
                 '}';
     }
+
 }
