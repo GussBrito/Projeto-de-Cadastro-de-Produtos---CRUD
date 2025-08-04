@@ -32,8 +32,7 @@ Para compilar e executar o projeto localmente, siga os passos abaixo:
 
 ```bash
 # 1. Clone o repositório
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-
+git clone https://github.com/GussBrito/Projeto-de-Cadastro-de-Produtos---CRUD.git
 # 2. Navegue até a pasta do projeto
 cd seu-repositorio
 
